@@ -1,0 +1,661 @@
+<!DOCTYPE html>
+<!-- saved from url=(0077)file:///C:/Users/Shahdullaha%20Hussaini/Downloads/happy_birthday_nigha_3.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Happy Birthday Nigha 🎉</title>
+<link href="./Happy Birthday Nigha 🎉_files/css2" rel="stylesheet">
+<style>
+:root {
+  --pink: #ff6b9d;
+  --purple: #845ef7;
+  --blue: #339af0;
+  --cyan: #22d3ee;
+  --yellow: #ffd43b;
+  --orange: #ff922b;
+  --green: #51cf66;
+  --bg: #f8f9ff;
+  --card: #ffffff;
+  --text: #1a1a2e;
+  --muted: #6b7280;
+  --border: rgba(0,0,0,0.07);
+  --shadow: 0 4px 24px rgba(0,0,0,0.08);
+  --shadow-lg: 0 12px 48px rgba(0,0,0,0.13);
+  --radius: 20px;
+  --radius-sm: 12px;
+}
+* { margin:0; padding:0; box-sizing:border-box; }
+html { scroll-behavior: smooth; }
+body {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  overflow-x: hidden;
+}
+
+/* HERO */
+.hero {
+  min-height: 100vh;
+  display: flex; flex-direction: column;
+  align-items: center; justify-content: center;
+  text-align: center;
+  padding: 60px 24px 80px;
+  position: relative; overflow: hidden;
+}
+.hero-bg {
+  position: absolute; inset: 0; z-index: 0;
+  background:
+    radial-gradient(ellipse 80% 60% at 10% 20%, rgba(255,107,157,0.18) 0%, transparent 60%),
+    radial-gradient(ellipse 60% 50% at 90% 10%, rgba(132,94,247,0.15) 0%, transparent 60%),
+    radial-gradient(ellipse 70% 60% at 50% 90%, rgba(51,154,240,0.13) 0%, transparent 60%),
+    radial-gradient(ellipse 50% 40% at 80% 70%, rgba(255,212,59,0.12) 0%, transparent 60%),
+    #f8f9ff;
+  animation: meshMove 8s ease-in-out infinite alternate;
+}
+@keyframes meshMove { 0%{filter:hue-rotate(0deg)} 100%{filter:hue-rotate(25deg)} }
+
+.blob { position:absolute; border-radius:50%; filter:blur(60px); opacity:0.5; animation:blobFloat 6s ease-in-out infinite; pointer-events:none; }
+.blob-1 { width:300px;height:300px;background:var(--pink);top:-80px;left:-60px;animation-delay:0s; }
+.blob-2 { width:250px;height:250px;background:var(--purple);top:20%;right:-80px;animation-delay:2s; }
+.blob-3 { width:200px;height:200px;background:var(--cyan);bottom:10%;left:10%;animation-delay:4s; }
+.blob-4 { width:180px;height:180px;background:var(--yellow);bottom:5%;right:15%;animation-delay:1s; }
+@keyframes blobFloat { 0%,100%{transform:translateY(0) scale(1)} 50%{transform:translateY(-30px) scale(1.05)} }
+
+.confetti-wrap { position:absolute;inset:0;overflow:hidden;pointer-events:none;z-index:1; }
+.cdot { position:absolute; border-radius:50%; animation:cfall linear infinite; }
+@keyframes cfall { 0%{transform:translateY(-20px) rotate(0deg);opacity:1} 100%{transform:translateY(110vh) rotate(720deg);opacity:0} }
+
+.hero-content { position:relative; z-index:2; }
+
+.emoji-row { font-size:2.5rem; margin-bottom:16px; display:flex; gap:12px; justify-content:center; animation:popIn 0.6s cubic-bezier(0.34,1.56,0.64,1) both; }
+@keyframes popIn { 0%{transform:scale(0);opacity:0} 100%{transform:scale(1);opacity:1} }
+
+.tag-pill {
+  display:inline-flex; align-items:center; gap:6px;
+  padding:6px 16px; background:white;
+  border:1.5px solid rgba(132,94,247,0.2); border-radius:100px;
+  font-size:0.78rem; font-weight:600; color:var(--purple);
+  letter-spacing:0.05em; margin-bottom:24px;
+  box-shadow:0 2px 12px rgba(132,94,247,0.12);
+  animation:popIn 0.5s 0.1s both;
+}
+
+.hero-name {
+  font-family:'Syne',sans-serif;
+  font-size:clamp(3.5rem,12vw,8rem); font-weight:800; line-height:1;
+  background:linear-gradient(135deg,#ff6b9d 0%,#845ef7 40%,#339af0 70%,#22d3ee 100%);
+  -webkit-background-clip:text; -webkit-text-fill-color:transparent; background-clip:text;
+  background-size:200% 200%;
+  animation:gradShift 4s ease infinite, slideUp 0.7s 0.2s both;
+}
+@keyframes gradShift { 0%,100%{background-position:0% 50%} 50%{background-position:100% 50%} }
+@keyframes slideUp { from{opacity:0;transform:translateY(40px)} to{opacity:1;transform:translateY(0)} }
+
+.hero-sub { margin-top:20px; font-size:clamp(1rem,2.5vw,1.3rem); color:var(--muted); font-weight:500; animation:slideUp 0.7s 0.4s both; }
+
+.hero-chips { display:flex; flex-wrap:wrap; gap:10px; justify-content:center; margin-top:28px; animation:slideUp 0.7s 0.6s both; }
+.chip { padding:8px 18px; border-radius:100px; font-size:0.82rem; font-weight:700; letter-spacing:0.03em; }
+.chip-pink   { background:rgba(255,107,157,0.12); color:#d6336c; }
+.chip-purple { background:rgba(132,94,247,0.12);  color:#6741d9; }
+.chip-blue   { background:rgba(51,154,240,0.12);  color:#1971c2; }
+.chip-yellow { background:rgba(255,212,59,0.15);  color:#e67700; }
+
+.scroll-hint { margin-top:48px; display:flex; flex-direction:column; align-items:center; gap:6px; color:var(--muted); font-size:0.78rem; animation:bounce 2s ease-in-out infinite, slideUp 0.7s 1s both; }
+@keyframes bounce { 0%,100%{transform:translateY(0)} 50%{transform:translateY(6px)} }
+
+/* SECTIONS */
+.section { padding:60px 24px; max-width:1200px; margin:0 auto; }
+.section-header { display:flex; align-items:center; gap:14px; margin-bottom:32px; }
+.section-badge { width:44px;height:44px; border-radius:14px; display:flex; align-items:center; justify-content:center; font-size:1.3rem; flex-shrink:0; }
+.badge-pink   { background:rgba(255,107,157,0.13); }
+.badge-purple { background:rgba(132,94,247,0.13); }
+.section-title { font-family:'Syne',sans-serif; font-size:clamp(1.4rem,4vw,2rem); font-weight:800; }
+.section-count { margin-left:auto; font-size:0.78rem; font-weight:700; color:var(--muted); background:rgba(0,0,0,0.05); padding:4px 12px; border-radius:100px; white-space:nowrap; }
+
+/* PREVIEW GRID */
+.preview-grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(200px,1fr)); gap:14px; }
+
+/* UPLOAD CARD */
+.upload-card {
+  background:white; border-radius:var(--radius);
+  border:2px dashed rgba(132,94,247,0.25);
+  overflow:hidden; aspect-ratio:4/3;
+  display:flex; flex-direction:column; align-items:center; justify-content:center; gap:8px;
+  cursor:pointer; transition:all 0.25s ease; position:relative;
+}
+.upload-card:hover { border-color:var(--purple); background:rgba(132,94,247,0.04); transform:translateY(-3px); box-shadow:var(--shadow); }
+.upload-card.has-media { border-style:solid; border-color:transparent; padding:0; }
+.upload-card.has-media:hover { border-color:var(--purple); }
+.upload-card img, .upload-card video { width:100%;height:100%;object-fit:cover;display:block;border-radius:calc(var(--radius) - 2px); }
+
+.uc-icon { font-size:2rem; }
+.uc-label { font-size:0.78rem; font-weight:600; color:var(--muted); }
+.uc-btn {
+  display:inline-block; padding:6px 16px; background:var(--purple); color:white;
+  border-radius:100px; font-size:0.75rem; font-weight:700; cursor:pointer;
+  transition:opacity 0.2s; border:none;
+}
+.uc-btn:hover { opacity:0.85; }
+.uc-btn input[type=file] { display:none; }
+
+.card-remove {
+  position:absolute; top:8px; right:8px;
+  width:28px; height:28px; background:rgba(255,255,255,0.92);
+  border:none; border-radius:50%; font-size:13px; cursor:pointer;
+  display:flex; align-items:center; justify-content:center;
+  box-shadow:0 2px 8px rgba(0,0,0,0.15); z-index:5; transition:background 0.2s;
+}
+.card-remove:hover { background:#ffe3e3; }
+
+/* PRANK */
+.prank-section { padding:20px 24px 60px; display:flex; flex-direction:column; align-items:center; gap:16px; }
+.prank-card {
+  background:white; border-radius:24px; padding:36px 48px; text-align:center;
+  box-shadow:var(--shadow-lg); border:1.5px solid rgba(255,107,157,0.15);
+  max-width:520px; width:100%; transition:transform 0.2s;
+}
+.prank-card:hover { transform:translateY(-4px); }
+.prank-icon-row { font-size:2.5rem; margin-bottom:14px; }
+.prank-title { font-family:'Syne',sans-serif; font-size:1.5rem; font-weight:800; margin-bottom:8px; }
+.prank-desc { color:var(--muted); font-size:0.9rem; margin-bottom:24px; line-height:1.6; }
+.prank-btn {
+  display:inline-flex; align-items:center; gap:10px;
+  padding:14px 36px; background:linear-gradient(135deg,var(--pink),var(--purple));
+  color:white; border:none; border-radius:100px;
+  font-family:'Plus Jakarta Sans',sans-serif; font-size:1rem; font-weight:700;
+  cursor:pointer; box-shadow:0 6px 24px rgba(255,107,157,0.35);
+  transition:transform 0.2s, box-shadow 0.2s;
+}
+.prank-btn:hover { transform:translateY(-2px) scale(1.03); box-shadow:0 10px 32px rgba(255,107,157,0.45); }
+.prank-hint { font-size:0.78rem; color:var(--muted); font-style:italic; }
+
+/* GALLERY - CAROUSEL */
+#full-gallery { display:none; }
+#full-gallery.visible { display:block; }
+
+.carousel-wrap { position:relative; padding:0 0 24px; }
+.carousel-track-outer { overflow:hidden; border-radius:var(--radius); position:relative; }
+.carousel-track {
+  display:flex; gap:16px;
+  transition:transform 0.45s cubic-bezier(0.4,0,0.2,1);
+  will-change:transform; padding:8px 4px 16px;
+}
+.carousel-track.photo-track .gallery-card { min-width:calc(33.333% - 12px); }
+.carousel-track.video-track .gallery-card { min-width:calc(50% - 8px); }
+@media(max-width:768px){
+  .carousel-track.photo-track .gallery-card{min-width:calc(50% - 8px);}
+  .carousel-track.video-track .gallery-card{min-width:100%;}
+}
+@media(max-width:480px){
+  .carousel-track.photo-track .gallery-card{min-width:100%;}
+}
+
+.gallery-card {
+  background:white; border-radius:var(--radius);
+  overflow:hidden; border:2px dashed rgba(132,94,247,0.25);
+  transition:all 0.3s ease; position:relative; flex-shrink:0;
+  box-shadow:0 6px 24px rgba(132,94,247,0.08);
+}
+.gallery-card:hover { border-color:var(--purple); transform:translateY(-6px) scale(1.02); box-shadow:0 16px 40px rgba(132,94,247,0.18); }
+.gallery-card.photo-card { aspect-ratio:1; }
+.gallery-card.video-card { aspect-ratio:16/9; }
+.gallery-card.has-media  { border-style:solid; border-color:transparent; }
+.gallery-card img, .gallery-card video { width:100%;height:100%;object-fit:cover;display:block; }
+
+.gc-inner { position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:8px;padding:10px; }
+.gc-icon { font-size:2rem; }
+.gc-num  { font-size:0.72rem;font-weight:700;color:var(--muted); }
+.gc-upload {
+  display:inline-block;padding:6px 16px;background:white;
+  border:1.5px solid var(--purple);color:var(--purple);
+  border-radius:100px;font-size:0.72rem;font-weight:700;
+  cursor:pointer;transition:background 0.2s,color 0.2s;
+}
+.gc-upload:hover{background:var(--purple);color:white;}
+.gc-upload input[type=file]{display:none;}
+
+.carousel-controls { display:flex;align-items:center;justify-content:center;gap:12px;margin-top:20px; }
+.car-arrow {
+  width:44px;height:44px;border-radius:50%;border:none;cursor:pointer;
+  display:flex;align-items:center;justify-content:center;
+  font-size:18px;font-weight:700;transition:all 0.2s ease;
+  background:white;box-shadow:0 4px 16px rgba(0,0,0,0.1);color:var(--purple);flex-shrink:0;
+}
+.car-arrow:hover:not(:disabled) { background:linear-gradient(135deg,var(--pink),var(--purple));color:white;transform:scale(1.1);box-shadow:0 6px 20px rgba(132,94,247,0.35); }
+.car-arrow:disabled { opacity:0.3;cursor:not-allowed;transform:none; }
+.car-dots { display:flex;gap:6px;align-items:center; }
+.car-dot { width:8px;height:8px;border-radius:50%;background:rgba(132,94,247,0.2);transition:all 0.25s ease;cursor:pointer;border:none; }
+.car-dot.active { background:linear-gradient(135deg,var(--pink),var(--purple));width:22px;border-radius:4px; }
+.car-counter { font-size:0.75rem;font-weight:700;color:var(--muted);min-width:50px;text-align:center; }
+
+/* DIVIDER */
+.fancy-divider { display:flex;align-items:center;gap:16px; padding:0 24px; max-width:1200px;margin:0 auto 40px; }
+.fdline { flex:1; height:1.5px; background:linear-gradient(to right,transparent,rgba(132,94,247,0.2),transparent); }
+.fddot  { width:8px;height:8px;border-radius:50%; background:linear-gradient(135deg,var(--pink),var(--purple)); flex-shrink:0; }
+
+/* MUSIC PLAYER */
+.music-player {
+  position:fixed; bottom:20px; left:50%; transform:translateX(-50%);
+  z-index:100; background:white; border-radius:100px;
+  padding:10px 20px; display:flex; align-items:center; gap:14px;
+  box-shadow:0 8px 40px rgba(0,0,0,0.15); border:1.5px solid rgba(132,94,247,0.15);
+  min-width:340px; max-width:90vw; transition:box-shadow 0.3s;
+}
+.music-player:hover { box-shadow:0 12px 50px rgba(132,94,247,0.2); }
+.mp-disc {
+  width:40px;height:40px;border-radius:50%;
+  background:linear-gradient(135deg,var(--pink),var(--purple));
+  display:flex;align-items:center;justify-content:center;
+  font-size:1.1rem;flex-shrink:0;
+  animation:spinDisc 4s linear infinite paused;
+}
+.mp-disc.playing { animation-play-state:running; }
+@keyframes spinDisc { to{transform:rotate(360deg)} }
+.mp-info { flex:1; min-width:0; }
+.mp-title { font-size:0.78rem; font-weight:700; color:var(--text); white-space:nowrap; overflow:hidden; text-overflow:ellipsis; }
+.mp-sub   { font-size:0.68rem; color:var(--muted); }
+.mp-progress { width:80px;height:3px;background:rgba(132,94,247,0.15);border-radius:10px;cursor:pointer;flex-shrink:0;position:relative; }
+.mp-fill { height:100%;border-radius:10px;width:0%;background:linear-gradient(135deg,var(--pink),var(--purple));pointer-events:none;transition:width 0.5s linear; }
+.mp-ctrl { width:36px;height:36px;border-radius:50%;border:none;cursor:pointer;display:flex;align-items:center;justify-content:center;font-size:14px;flex-shrink:0;transition:all 0.2s; }
+.mp-play { background:linear-gradient(135deg,var(--pink),var(--purple));color:white;box-shadow:0 3px 12px rgba(132,94,247,0.35); }
+.mp-play:hover { transform:scale(1.1); }
+.mp-secondary { background:rgba(132,94,247,0.1);color:var(--purple); }
+.mp-secondary:hover { background:rgba(132,94,247,0.2); }
+.mp-vol { -webkit-appearance:none;width:60px;height:3px;background:rgba(132,94,247,0.15);border-radius:10px;cursor:pointer;accent-color:var(--purple);flex-shrink:0; }
+.mp-upload-btn {
+  display:flex;align-items:center;gap:5px;
+  padding:6px 14px; background:rgba(132,94,247,0.1);
+  border:none;border-radius:100px;color:var(--purple);
+  font-family:'Plus Jakarta Sans',sans-serif;font-size:0.72rem;font-weight:700;
+  cursor:pointer;flex-shrink:0;transition:background 0.2s;
+}
+.mp-upload-btn:hover { background:rgba(132,94,247,0.2); }
+.mp-upload-btn input { display:none; }
+audio { display:none; }
+
+/* LIGHTBOX */
+.lightbox { display:none;position:fixed;inset:0;z-index:200;background:rgba(10,10,20,0.92);align-items:center;justify-content:center;backdrop-filter:blur(10px); }
+.lightbox.open { display:flex; }
+.lb-inner { position:relative;max-width:90vw;max-height:90vh; }
+.lb-inner img, .lb-inner video { max-width:90vw;max-height:85vh;border-radius:var(--radius);box-shadow:0 20px 80px rgba(0,0,0,0.5); }
+.lb-close { position:absolute;top:-44px;right:0;background:rgba(255,255,255,0.1);border:none;color:white;font-size:1.5rem;cursor:pointer;width:36px;height:36px;border-radius:50%;display:flex;align-items:center;justify-content:center;transition:background 0.2s; }
+.lb-close:hover { background:rgba(255,255,255,0.2); }
+.lb-nav { position:absolute;top:50%;transform:translateY(-50%);background:rgba(255,255,255,0.12);border:none;color:white;font-size:1.6rem;cursor:pointer;width:44px;height:44px;border-radius:50%;display:flex;align-items:center;justify-content:center;transition:background 0.2s;z-index:10; }
+.lb-nav:hover { background:rgba(255,255,255,0.25); }
+.lb-nav-l { left:-60px; }
+.lb-nav-r { right:-60px; }
+.lb-counter { position:absolute;bottom:-36px;left:50%;transform:translateX(-50%);color:rgba(255,255,255,0.6);font-size:0.8rem;font-weight:600;white-space:nowrap; }
+
+footer { text-align:center;padding:40px 24px 120px;color:var(--muted);font-size:0.82rem; }
+footer strong { color:var(--pink); }
+
+.reveal { opacity:0;transform:translateY(24px);transition:opacity 0.6s ease,transform 0.6s ease; }
+.reveal.visible { opacity:1;transform:translateY(0); }
+
+::-webkit-scrollbar { width:5px; }
+::-webkit-scrollbar-track { background:#f1f1f1; }
+::-webkit-scrollbar-thumb { background:rgba(132,94,247,0.4);border-radius:10px; }
+</style>
+</head>
+<body>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-bg"></div>
+  <div class="blob blob-1"></div>
+  <div class="blob blob-2"></div>
+  <div class="blob blob-3"></div>
+  <div class="blob blob-4"></div>
+  <div class="confetti-wrap" id="confetti"><div class="cdot" style="width: 6.92329px; height: 6.92329px; left: 31.9793%; top: -20px; background: rgb(132, 94, 247); opacity: 0.294204; animation: 9.18132s linear 1.20293s infinite normal none running cfall;"></div><div class="cdot" style="width: 9.7929px; height: 9.7929px; left: 83.9613%; top: -20px; background: rgb(255, 212, 59); opacity: 0.493548; animation: 5.40383s linear 0.133138s infinite normal none running cfall;"></div><div class="cdot" style="width: 5.26437px; height: 5.26437px; left: 73.2545%; top: -20px; background: rgb(255, 146, 43); opacity: 0.309286; animation: 9.3276s linear 3.58995s infinite normal none running cfall;"></div><div class="cdot" style="width: 9.14867px; height: 9.14867px; left: 63.04%; top: -20px; background: rgb(34, 211, 238); opacity: 0.621146; animation: 8.45377s linear 5.30897s infinite normal none running cfall;"></div><div class="cdot" style="width: 10.9583px; height: 10.9583px; left: 89.9806%; top: -20px; background: rgb(132, 94, 247); opacity: 0.33401; animation: 5.72511s linear 7.41009s infinite normal none running cfall;"></div><div class="cdot" style="width: 5.58537px; height: 5.58537px; left: 67.0535%; top: -20px; background: rgb(132, 94, 247); opacity: 0.217271; animation: 8.61517s linear 1.91889s infinite normal none running cfall;"></div><div class="cdot" style="width: 4.99114px; height: 4.99114px; left: 59.3606%; top: -20px; background: rgb(132, 94, 247); opacity: 0.661462; animation: 4.35398s linear 0.168667s infinite normal none running cfall;"></div><div class="cdot" style="width: 4.06632px; height: 4.06632px; left: 12.7562%; top: -20px; background: rgb(81, 207, 102); opacity: 0.512201; animation: 4.70093s linear 3.51398s infinite normal none running cfall;"></div><div class="cdot" style="width: 10.5983px; height: 10.5983px; left: 14.3424%; top: -20px; background: rgb(132, 94, 247); opacity: 0.509166; animation: 7.55955s linear 3.90306s infinite normal none running cfall;"></div><div class="cdot" style="width: 10.141px; height: 10.141px; left: 71.5314%; top: -20px; background: rgb(34, 211, 238); opacity: 0.201881; animation: 7.25021s linear 7.70828s infinite normal none running cfall;"></div><div class="cdot" style="width: 13.1881px; height: 13.1881px; left: 16.5708%; top: -20px; background: rgb(255, 212, 59); opacity: 0.233147; animation: 8.07158s linear 3.11973s infinite normal none running cfall;"></div><div class="cdot" style="width: 9.79374px; height: 9.79374px; left: 46.039%; top: -20px; background: rgb(255, 107, 157); opacity: 0.215301; animation: 4.63445s linear 5.56922s infinite normal none running cfall;"></div><div class="cdot" style="width: 11.8279px; height: 11.8279px; left: 70.4312%; top: -20px; background: rgb(81, 207, 102); opacity: 0.289349; animation: 7.85942s linear 3.47453s infinite normal none running cfall;"></div><div class="cdot" style="width: 11.2819px; height: 11.2819px; left: 69.5664%; top: -20px; background: rgb(51, 154, 240); opacity: 0.217709; animation: 4.10905s linear 5.26123s infinite normal none running cfall;"></div><div class="cdot" style="width: 10.2361px; height: 10.2361px; left: 53.9808%; top: -20px; background: rgb(255, 146, 43); opacity: 0.443185; animation: 9.29133s linear 5.01087s infinite normal none running cfall;"></div><div class="cdot" style="width: 4.52679px; height: 4.52679px; left: 30.1142%; top: -20px; background: rgb(34, 211, 238); opacity: 0.296137; animation: 6.17104s linear 5.74264s infinite normal none running cfall;"></div><div class="cdot" style="width: 7.16829px; height: 7.16829px; left: 20.4059%; top: -20px; background: rgb(51, 154, 240); opacity: 0.512105; animation: 4.42357s linear 1.22465s infinite normal none running cfall;"></div><div class="cdot" style="width: 6.76352px; height: 6.76352px; left: 54.7286%; top: -20px; background: rgb(132, 94, 247); opacity: 0.548079; animation: 5.97243s linear 3.6809s infinite normal none running cfall;"></div><div class="cdot" style="width: 5.52979px; height: 5.52979px; left: 62.4911%; top: -20px; background: rgb(255, 146, 43); opacity: 0.361894; animation: 4.94546s linear 6.34611s infinite normal none running cfall;"></div><div class="cdot" style="width: 5.35387px; height: 5.35387px; left: 57.6152%; top: -20px; background: rgb(34, 211, 238); opacity: 0.388907; animation: 6.93334s linear 2.47293s infinite normal none running cfall;"></div><div class="cdot" style="width: 10.0467px; height: 10.0467px; left: 75.9562%; top: -20px; background: rgb(81, 207, 102); opacity: 0.213194; animation: 5.20519s linear 1.01302s infinite normal none running cfall;"></div><div class="cdot" style="width: 5.2306px; height: 5.2306px; left: 13.0756%; top: -20px; background: rgb(81, 207, 102); opacity: 0.235; animation: 9.12736s linear 4.42243s infinite normal none running cfall;"></div><div class="cdot" style="width: 4.98642px; height: 4.98642px; left: 61.4021%; top: -20px; background: rgb(255, 212, 59); opacity: 0.635483; animation: 8.93002s linear 7.39603s infinite normal none running cfall;"></div><div class="cdot" style="width: 10.1773px; height: 10.1773px; left: 94.5143%; top: -20px; background: rgb(255, 212, 59); opacity: 0.288763; animation: 8.85098s linear 5.42127s infinite normal none running cfall;"></div><div class="cdot" style="width: 6.51094px; height: 6.51094px; left: 17.7126%; top: -20px; background: rgb(255, 212, 59); opacity: 0.34184; animation: 8.14158s linear 1.09558s infinite normal none running cfall;"></div><div class="cdot" style="width: 7.96031px; height: 7.96031px; left: 38.5804%; top: -20px; background: rgb(132, 94, 247); opacity: 0.335302; animation: 8.56265s linear 0.402811s infinite normal none running cfall;"></div><div class="cdot" style="width: 4.83875px; height: 4.83875px; left: 48.4558%; top: -20px; background: rgb(34, 211, 238); opacity: 0.559967; animation: 5.90573s linear 3.86363s infinite normal none running cfall;"></div><div class="cdot" style="width: 10.4467px; height: 10.4467px; left: 87.359%; top: -20px; background: rgb(81, 207, 102); opacity: 0.347459; animation: 4.78217s linear 5.73598s infinite normal none running cfall;"></div><div class="cdot" style="width: 6.92135px; height: 6.92135px; left: 8.31014%; top: -20px; background: rgb(255, 146, 43); opacity: 0.501924; animation: 6.77448s linear 3.19336s infinite normal none running cfall;"></div><div class="cdot" style="width: 11.98px; height: 11.98px; left: 74.8252%; top: -20px; background: rgb(255, 107, 157); opacity: 0.437581; animation: 5.11745s linear 0.555928s infinite normal none running cfall;"></div><div class="cdot" style="width: 7.76801px; height: 7.76801px; left: 90.1223%; top: -20px; background: rgb(255, 107, 157); opacity: 0.413463; animation: 5.68312s linear 2.38732s infinite normal none running cfall;"></div><div class="cdot" style="width: 12.563px; height: 12.563px; left: 36.9416%; top: -20px; background: rgb(255, 107, 157); opacity: 0.392316; animation: 4.93586s linear 2.95074s infinite normal none running cfall;"></div><div class="cdot" style="width: 12.3489px; height: 12.3489px; left: 94.7287%; top: -20px; background: rgb(255, 146, 43); opacity: 0.693859; animation: 9.60343s linear 2.94457s infinite normal none running cfall;"></div><div class="cdot" style="width: 4.3102px; height: 4.3102px; left: 22.7633%; top: -20px; background: rgb(255, 146, 43); opacity: 0.611855; animation: 6.35382s linear 6.8673s infinite normal none running cfall;"></div><div class="cdot" style="width: 10.0159px; height: 10.0159px; left: 53.1177%; top: -20px; background: rgb(81, 207, 102); opacity: 0.638098; animation: 9.18911s linear 5.00491s infinite normal none running cfall;"></div><div class="cdot" style="width: 6.86399px; height: 6.86399px; left: 83.9338%; top: -20px; background: rgb(34, 211, 238); opacity: 0.283479; animation: 6.01814s linear 0.119789s infinite normal none running cfall;"></div><div class="cdot" style="width: 9.20982px; height: 9.20982px; left: 57.7167%; top: -20px; background: rgb(81, 207, 102); opacity: 0.352088; animation: 4.922s linear 5.59342s infinite normal none running cfall;"></div><div class="cdot" style="width: 10.4767px; height: 10.4767px; left: 63.1348%; top: -20px; background: rgb(81, 207, 102); opacity: 0.496999; animation: 9.59502s linear 7.23397s infinite normal none running cfall;"></div><div class="cdot" style="width: 9.18873px; height: 9.18873px; left: 39.0496%; top: -20px; background: rgb(34, 211, 238); opacity: 0.283792; animation: 7.92456s linear 2.3358s infinite normal none running cfall;"></div><div class="cdot" style="width: 12.2635px; height: 12.2635px; left: 30.5194%; top: -20px; background: rgb(81, 207, 102); opacity: 0.332623; animation: 9.56298s linear 5.65723s infinite normal none running cfall;"></div><div class="cdot" style="width: 8.5803px; height: 8.5803px; left: 70.042%; top: -20px; background: rgb(255, 212, 59); opacity: 0.221593; animation: 9.84998s linear 7.53621s infinite normal none running cfall;"></div><div class="cdot" style="width: 6.16621px; height: 6.16621px; left: 0.0950244%; top: -20px; background: rgb(51, 154, 240); opacity: 0.260714; animation: 9.66923s linear 0.0925743s infinite normal none running cfall;"></div><div class="cdot" style="width: 12.217px; height: 12.217px; left: 92.0719%; top: -20px; background: rgb(51, 154, 240); opacity: 0.408295; animation: 7.6071s linear 1.19726s infinite normal none running cfall;"></div><div class="cdot" style="width: 13.6034px; height: 13.6034px; left: 88.8948%; top: -20px; background: rgb(81, 207, 102); opacity: 0.216254; animation: 7.22257s linear 3.40374s infinite normal none running cfall;"></div><div class="cdot" style="width: 5.93342px; height: 5.93342px; left: 35.3094%; top: -20px; background: rgb(255, 212, 59); opacity: 0.334306; animation: 4.83216s linear 5.74717s infinite normal none running cfall;"></div><div class="cdot" style="width: 5.67617px; height: 5.67617px; left: 83.2698%; top: -20px; background: rgb(255, 212, 59); opacity: 0.440311; animation: 6.59521s linear 1.16073s infinite normal none running cfall;"></div><div class="cdot" style="width: 6.41957px; height: 6.41957px; left: 11.1214%; top: -20px; background: rgb(81, 207, 102); opacity: 0.538928; animation: 8.40034s linear 1.87497s infinite normal none running cfall;"></div><div class="cdot" style="width: 9.17987px; height: 9.17987px; left: 56.6654%; top: -20px; background: rgb(255, 212, 59); opacity: 0.574825; animation: 4.10413s linear 6.58952s infinite normal none running cfall;"></div><div class="cdot" style="width: 8.32324px; height: 8.32324px; left: 33.261%; top: -20px; background: rgb(132, 94, 247); opacity: 0.443769; animation: 4.08123s linear 5.44802s infinite normal none running cfall;"></div><div class="cdot" style="width: 10.0041px; height: 10.0041px; left: 27.5511%; top: -20px; background: rgb(255, 212, 59); opacity: 0.400149; animation: 9.18391s linear 4.2479s infinite normal none running cfall;"></div></div>
+
+  <div class="hero-content">
+    <div class="emoji-row">🎂 🎉 🥳 🎊 ✨</div>
+    <div class="tag-pill">✦ Today is your day</div>
+    <h1 class="hero-name">Happy Birthday<br>Nigha Ayaan!</h1>
+    <p class="hero-sub">Wishing you a day filled with joy, laughter &amp; love 💖</p>
+    <div class="hero-chips">
+      <span class="chip chip-pink">🌸 You're amazing</span>
+      <span class="chip chip-purple">✨ So blessed</span>
+      <span class="chip chip-blue">🎵 Let's celebrate</span>
+      <span class="chip chip-yellow">🔥 Best day ever</span>
+    </div>
+    <div class="scroll-hint">
+      <span style="font-size:1.3rem;">↓</span>
+      <span>Scroll for surprises</span>
+    </div>
+  </div>
+</section>
+
+<!-- PREVIEW -->
+<div class="section reveal visible">
+  <div class="section-header">
+    <div class="section-badge badge-pink">📷</div>
+    <h2 class="section-title">A little glimpse</h2>
+    <span class="section-count">2 photos · 2 videos</span>
+  </div>
+  <div class="preview-grid">
+    <div class="upload-card has-media" id="pv-p1"><button class="card-remove" onclick="clearPreview(&#39;pv-p1&#39;,&#39;image&#39;,&#39;Photo 1&#39;)">✕</button><img src="blob:null/550a35ff-cc75-4b14-8912-37ee3cad0b68"></div>
+    <div class="upload-card has-media" id="pv-p2"><button class="card-remove" onclick="clearPreview(&#39;pv-p2&#39;,&#39;image&#39;,&#39;Photo 2&#39;)">✕</button><img src="blob:null/c063bf24-4093-4436-8054-3cc16e0b99da"></div>
+    <div class="upload-card has-media" id="pv-v1"><button class="card-remove" onclick="clearPreview(&#39;pv-v1&#39;,&#39;video&#39;,&#39;Video 1&#39;)">✕</button><video src="blob:null/29bd0403-40e5-49a5-9bf8-30d8ffa5d38d" controls="" loop=""></video></div>
+    <div class="upload-card has-media" id="pv-v2"><button class="card-remove" onclick="clearPreview(&#39;pv-v2&#39;,&#39;video&#39;,&#39;Video 2&#39;)">✕</button><video src="blob:null/d0309159-ac26-47ff-8ec5-8058cd71417b" controls="" loop=""></video></div>
+  </div>
+</div>
+
+<!-- PRANK -->
+<div class="prank-section reveal visible">
+  <div class="prank-card">
+    <div class="prank-icon-row">👀🔥📲</div>
+    <h3 class="prank-title">Psst… Nigha 👇</h3>
+    <p class="prank-desc">Want to see leaked MMS and photos?<br>You know you're curious… go on, click it 😏</p>
+    <button class="prank-btn" id="prank-btn" onclick="revealGallery()" style="background: linear-gradient(135deg, rgb(81, 207, 102), rgb(51, 154, 240)); cursor: default;">🎉 Happy Birthday Nigha!</button>
+  </div>
+  <p class="prank-hint" id="prank-hint">( Gotcha! These are our memories 💛 )</p>
+</div>
+
+<!-- FULL GALLERY -->
+<div id="full-gallery" style="display: block;">
+  <div class="fancy-divider"><div class="fdline"></div><div class="fddot"></div><div class="fdline"></div></div>
+  <div style="text-align:center;padding:0 24px 48px;max-width:600px;margin:0 auto;">
+    <div style="font-size:3rem;margin-bottom:12px;">🎉😂💛</div>
+    <h2 style="font-family:&#39;Syne&#39;,sans-serif;font-size:clamp(1.5rem,4vw,2.2rem);font-weight:800;background:linear-gradient(135deg,#ff6b9d,#845ef7);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;margin-bottom:10px;">Gotcha Nigha! 😂</h2>
+    <p style="color:var(--muted);font-size:1rem;line-height:1.7;">These aren't "leaked" — they're our most beautiful memories together. Every photo, every video, captured just for you. Happy Birthday! 🥳</p>
+  </div>
+
+  <div class="section">
+    <div class="section-header">
+      <div class="section-badge badge-pink">📸</div>
+      <h2 class="section-title">Our Photos</h2>
+      <span class="section-count">21 photos</span>
+    </div>
+    <div class="carousel-wrap">
+      <div class="carousel-track-outer">
+        <div class="carousel-track photo-track" id="photos-track" style="transform: translateX(-5211.87px);"><div class="gallery-card photo-card has-media" id="gc-p1"><img src="blob:null/4a86ee8d-0ed9-4c69-89f3-4d86ff7db9f4" onclick="openLb(&#39;image&#39;,&#39;blob:null/4a86ee8d-0ed9-4c69-89f3-4d86ff7db9f4&#39;,&#39;photo&#39;,0)"><button class="card-remove" onclick="resetGallery(&#39;gc-p1&#39;,&#39;image&#39;,1,&#39;photo&#39;)">✕</button></div><div class="gallery-card photo-card has-media" id="gc-p2"><img src="blob:null/6ba7474e-9b4d-41e5-9caf-05a8220a9623" onclick="openLb(&#39;image&#39;,&#39;blob:null/6ba7474e-9b4d-41e5-9caf-05a8220a9623&#39;,&#39;photo&#39;,1)"><button class="card-remove" onclick="resetGallery(&#39;gc-p2&#39;,&#39;image&#39;,2,&#39;photo&#39;)">✕</button></div><div class="gallery-card photo-card has-media" id="gc-p3"><img src="blob:null/2a55026d-bac9-4993-a0ee-e0f8bb62868f" onclick="openLb(&#39;image&#39;,&#39;blob:null/2a55026d-bac9-4993-a0ee-e0f8bb62868f&#39;,&#39;photo&#39;,2)"><button class="card-remove" onclick="resetGallery(&#39;gc-p3&#39;,&#39;image&#39;,3,&#39;photo&#39;)">✕</button></div><div class="gallery-card photo-card has-media" id="gc-p4"><img src="blob:null/e6ab9f80-90d2-4cb0-a1a4-554033f664c2" onclick="openLb(&#39;image&#39;,&#39;blob:null/e6ab9f80-90d2-4cb0-a1a4-554033f664c2&#39;,&#39;photo&#39;,3)"><button class="card-remove" onclick="resetGallery(&#39;gc-p4&#39;,&#39;image&#39;,4,&#39;photo&#39;)">✕</button></div><div class="gallery-card photo-card has-media" id="gc-p5"><img src="blob:null/3abc3361-2ac8-49be-8158-15a06db3f2ee" onclick="openLb(&#39;image&#39;,&#39;blob:null/3abc3361-2ac8-49be-8158-15a06db3f2ee&#39;,&#39;photo&#39;,4)"><button class="card-remove" onclick="resetGallery(&#39;gc-p5&#39;,&#39;image&#39;,5,&#39;photo&#39;)">✕</button></div><div class="gallery-card photo-card has-media" id="gc-p6"><img src="blob:null/1311fed6-3eb4-4eb1-badc-10ddc17e91c3" onclick="openLb(&#39;image&#39;,&#39;blob:null/1311fed6-3eb4-4eb1-badc-10ddc17e91c3&#39;,&#39;photo&#39;,5)"><button class="card-remove" onclick="resetGallery(&#39;gc-p6&#39;,&#39;image&#39;,6,&#39;photo&#39;)">✕</button></div><div class="gallery-card photo-card has-media" id="gc-p7"><img src="blob:null/20053bf7-ff6f-4e5f-98b3-4a6c2eceb7f7" onclick="openLb(&#39;image&#39;,&#39;blob:null/20053bf7-ff6f-4e5f-98b3-4a6c2eceb7f7&#39;,&#39;photo&#39;,6)"><button class="card-remove" onclick="resetGallery(&#39;gc-p7&#39;,&#39;image&#39;,7,&#39;photo&#39;)">✕</button></div><div class="gallery-card photo-card has-media" id="gc-p8"><img src="blob:null/c3e3dd2b-94ef-46ed-b5ea-5d8646777175" onclick="openLb(&#39;image&#39;,&#39;blob:null/c3e3dd2b-94ef-46ed-b5ea-5d8646777175&#39;,&#39;photo&#39;,7)"><button class="card-remove" onclick="resetGallery(&#39;gc-p8&#39;,&#39;image&#39;,8,&#39;photo&#39;)">✕</button></div><div class="gallery-card photo-card has-media" id="gc-p9"><img src="blob:null/c6b3f5aa-2c72-4f72-a860-a6d25e22b64e" onclick="openLb(&#39;image&#39;,&#39;blob:null/c6b3f5aa-2c72-4f72-a860-a6d25e22b64e&#39;,&#39;photo&#39;,8)"><button class="card-remove" onclick="resetGallery(&#39;gc-p9&#39;,&#39;image&#39;,9,&#39;photo&#39;)">✕</button></div><div class="gallery-card photo-card has-media" id="gc-p10"><img src="blob:null/f6a01997-2cd5-4724-bf38-2dd84a153d7d" onclick="openLb(&#39;image&#39;,&#39;blob:null/f6a01997-2cd5-4724-bf38-2dd84a153d7d&#39;,&#39;photo&#39;,9)"><button class="card-remove" onclick="resetGallery(&#39;gc-p10&#39;,&#39;image&#39;,10,&#39;photo&#39;)">✕</button></div><div class="gallery-card photo-card has-media" id="gc-p11"><img src="blob:null/265cff8e-784a-4cb1-bd25-b2f98b2544be" onclick="openLb(&#39;image&#39;,&#39;blob:null/265cff8e-784a-4cb1-bd25-b2f98b2544be&#39;,&#39;photo&#39;,10)"><button class="card-remove" onclick="resetGallery(&#39;gc-p11&#39;,&#39;image&#39;,11,&#39;photo&#39;)">✕</button></div><div class="gallery-card photo-card has-media" id="gc-p12"><img src="blob:null/2cb03f0e-de5f-45ce-a36e-46fbd35f5206" onclick="openLb(&#39;image&#39;,&#39;blob:null/2cb03f0e-de5f-45ce-a36e-46fbd35f5206&#39;,&#39;photo&#39;,11)"><button class="card-remove" onclick="resetGallery(&#39;gc-p12&#39;,&#39;image&#39;,12,&#39;photo&#39;)">✕</button></div><div class="gallery-card photo-card has-media" id="gc-p13"><img src="blob:null/bd0f9640-8a7a-47a2-8011-0e686da0936d" onclick="openLb(&#39;image&#39;,&#39;blob:null/bd0f9640-8a7a-47a2-8011-0e686da0936d&#39;,&#39;photo&#39;,12)"><button class="card-remove" onclick="resetGallery(&#39;gc-p13&#39;,&#39;image&#39;,13,&#39;photo&#39;)">✕</button></div><div class="gallery-card photo-card has-media" id="gc-p14"><img src="blob:null/74de562d-8258-4766-9a1b-ea2de2bdd5f7" onclick="openLb(&#39;image&#39;,&#39;blob:null/74de562d-8258-4766-9a1b-ea2de2bdd5f7&#39;,&#39;photo&#39;,13)"><button class="card-remove" onclick="resetGallery(&#39;gc-p14&#39;,&#39;image&#39;,14,&#39;photo&#39;)">✕</button></div><div class="gallery-card photo-card has-media" id="gc-p15"><img src="blob:null/af4e9517-7d1e-448e-8f3b-9122c2dbf2d2" onclick="openLb(&#39;image&#39;,&#39;blob:null/af4e9517-7d1e-448e-8f3b-9122c2dbf2d2&#39;,&#39;photo&#39;,14)"><button class="card-remove" onclick="resetGallery(&#39;gc-p15&#39;,&#39;image&#39;,15,&#39;photo&#39;)">✕</button></div><div class="gallery-card photo-card has-media" id="gc-p16"><img src="blob:null/76bdd439-62fa-4fd5-9451-a5fb86cd23a1" onclick="openLb(&#39;image&#39;,&#39;blob:null/76bdd439-62fa-4fd5-9451-a5fb86cd23a1&#39;,&#39;photo&#39;,15)"><button class="card-remove" onclick="resetGallery(&#39;gc-p16&#39;,&#39;image&#39;,16,&#39;photo&#39;)">✕</button></div><div class="gallery-card photo-card has-media" id="gc-p17"><img src="blob:null/570ba3e5-fac1-4d28-a509-7a036fe14837" onclick="openLb(&#39;image&#39;,&#39;blob:null/570ba3e5-fac1-4d28-a509-7a036fe14837&#39;,&#39;photo&#39;,16)"><button class="card-remove" onclick="resetGallery(&#39;gc-p17&#39;,&#39;image&#39;,17,&#39;photo&#39;)">✕</button></div><div class="gallery-card photo-card has-media" id="gc-p18"><img src="blob:null/8948ca6d-2063-4702-81fa-f13ca616964c" onclick="openLb(&#39;image&#39;,&#39;blob:null/8948ca6d-2063-4702-81fa-f13ca616964c&#39;,&#39;photo&#39;,17)"><button class="card-remove" onclick="resetGallery(&#39;gc-p18&#39;,&#39;image&#39;,18,&#39;photo&#39;)">✕</button></div><div class="gallery-card photo-card has-media" id="gc-p19"><img src="blob:null/b682c18b-e16b-490f-b86d-39144679b4ef" onclick="openLb(&#39;image&#39;,&#39;blob:null/b682c18b-e16b-490f-b86d-39144679b4ef&#39;,&#39;photo&#39;,18)"><button class="card-remove" onclick="resetGallery(&#39;gc-p19&#39;,&#39;image&#39;,19,&#39;photo&#39;)">✕</button></div><div class="gallery-card photo-card has-media" id="gc-p20"><img src="blob:null/5a1103f5-b7d9-489b-947b-7321803d26a5" onclick="openLb(&#39;image&#39;,&#39;blob:null/5a1103f5-b7d9-489b-947b-7321803d26a5&#39;,&#39;photo&#39;,19)"><button class="card-remove" onclick="resetGallery(&#39;gc-p20&#39;,&#39;image&#39;,20,&#39;photo&#39;)">✕</button></div><div class="gallery-card photo-card has-media" id="gc-p21"><img src="blob:null/1885d65f-9a33-4866-b33d-f00d05a509fd" onclick="openLb(&#39;image&#39;,&#39;blob:null/1885d65f-9a33-4866-b33d-f00d05a509fd&#39;,&#39;photo&#39;,20)"><button class="card-remove" onclick="resetGallery(&#39;gc-p21&#39;,&#39;image&#39;,21,&#39;photo&#39;)">✕</button></div></div>
+      </div>
+      <div class="carousel-controls">
+        <button class="car-arrow" id="photo-prev" onclick="slideCarousel(&#39;photo&#39;,-1)">←</button>
+        <div class="car-dots" id="photo-dots"><button class="car-dot"></button><button class="car-dot active"></button><button class="car-dot"></button><button class="car-dot"></button><button class="car-dot"></button><button class="car-dot"></button><button class="car-dot"></button></div>
+        <span class="car-counter" id="photo-counter">6 – 8 / 21</span>
+        <button class="car-arrow" id="photo-next" onclick="slideCarousel(&#39;photo&#39;,1)">→</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="fancy-divider"><div class="fdline"></div><div class="fddot"></div><div class="fdline"></div></div>
+
+  <div class="section">
+    <div class="section-header">
+      <div class="section-badge badge-purple">🎬</div>
+      <h2 class="section-title">Our Videos</h2>
+      <span class="section-count">17 videos</span>
+    </div>
+    <div class="carousel-wrap">
+      <div class="carousel-track-outer">
+        <div class="carousel-track video-track" id="videos-track" style="transform: translateX(-3480px);"><div class="gallery-card video-card has-media" id="gc-v1"><video src="blob:null/a1acb63f-ff08-4d6e-959a-6570c063bfb2" controls="" loop=""></video><button class="card-remove" onclick="resetGallery(&#39;gc-v1&#39;,&#39;video&#39;,1,&#39;video&#39;)">✕</button></div><div class="gallery-card video-card has-media" id="gc-v2"><video src="blob:null/206bd605-7efe-446e-b5f9-62db816c0243" controls="" loop=""></video><button class="card-remove" onclick="resetGallery(&#39;gc-v2&#39;,&#39;video&#39;,2,&#39;video&#39;)">✕</button></div><div class="gallery-card video-card has-media" id="gc-v3"><video src="blob:null/45838fcf-ed67-411b-b6bc-162785df2f3c" controls="" loop=""></video><button class="card-remove" onclick="resetGallery(&#39;gc-v3&#39;,&#39;video&#39;,3,&#39;video&#39;)">✕</button></div><div class="gallery-card video-card has-media" id="gc-v4"><video src="blob:null/a9dabc37-70d2-4935-a410-61e0ac95b857" controls="" loop=""></video><button class="card-remove" onclick="resetGallery(&#39;gc-v4&#39;,&#39;video&#39;,4,&#39;video&#39;)">✕</button></div><div class="gallery-card video-card has-media" id="gc-v5"><video src="blob:null/9adc842d-2b03-4658-bf3e-3041ab965add" controls="" loop=""></video><button class="card-remove" onclick="resetGallery(&#39;gc-v5&#39;,&#39;video&#39;,5,&#39;video&#39;)">✕</button></div><div class="gallery-card video-card has-media" id="gc-v6"><video src="blob:null/f700814d-d4ff-41dd-aa1e-f199b051603b" controls="" loop=""></video><button class="card-remove" onclick="resetGallery(&#39;gc-v6&#39;,&#39;video&#39;,6,&#39;video&#39;)">✕</button></div><div class="gallery-card video-card has-media" id="gc-v7"><video src="blob:null/7275b5cc-f155-4600-9a37-09d830da5844" controls="" loop=""></video><button class="card-remove" onclick="resetGallery(&#39;gc-v7&#39;,&#39;video&#39;,7,&#39;video&#39;)">✕</button></div><div class="gallery-card video-card has-media" id="gc-v8"><video src="blob:null/943dfa39-1545-4482-b4da-84302d4293ff" controls="" loop=""></video><button class="card-remove" onclick="resetGallery(&#39;gc-v8&#39;,&#39;video&#39;,8,&#39;video&#39;)">✕</button></div><div class="gallery-card video-card has-media" id="gc-v9"><video src="blob:null/a3b2a319-e61c-4153-906e-2fb1eff8cdf2" controls="" loop=""></video><button class="card-remove" onclick="resetGallery(&#39;gc-v9&#39;,&#39;video&#39;,9,&#39;video&#39;)">✕</button></div><div class="gallery-card video-card has-media" id="gc-v10"><video src="blob:null/dedd8074-bd5d-401a-889f-b8b537672ad0" controls="" loop=""></video><button class="card-remove" onclick="resetGallery(&#39;gc-v10&#39;,&#39;video&#39;,10,&#39;video&#39;)">✕</button></div><div class="gallery-card video-card has-media" id="gc-v11"><video src="blob:null/7fd2ddd8-7413-4ec8-bba7-3a123d44d40d" controls="" loop=""></video><button class="card-remove" onclick="resetGallery(&#39;gc-v11&#39;,&#39;video&#39;,11,&#39;video&#39;)">✕</button></div><div class="gallery-card video-card has-media" id="gc-v12"><video src="blob:null/489b2e0a-60e8-4646-a8d5-a3276d0a8fce" controls="" loop=""></video><button class="card-remove" onclick="resetGallery(&#39;gc-v12&#39;,&#39;video&#39;,12,&#39;video&#39;)">✕</button></div><div class="gallery-card video-card has-media" id="gc-v13"><video src="blob:null/acc4c178-4798-499c-a06e-294d2f1f2ae2" controls="" loop=""></video><button class="card-remove" onclick="resetGallery(&#39;gc-v13&#39;,&#39;video&#39;,13,&#39;video&#39;)">✕</button></div><div class="gallery-card video-card has-media" id="gc-v14"><video src="blob:null/1eeb85e5-36de-42e1-be18-fa1a10eb3c8f" controls="" loop=""></video><button class="card-remove" onclick="resetGallery(&#39;gc-v14&#39;,&#39;video&#39;,14,&#39;video&#39;)">✕</button></div><div class="gallery-card video-card has-media" id="gc-v15"><video src="blob:null/650941cd-085a-4eae-a6b3-8ac7623bd754" controls="" loop=""></video><button class="card-remove" onclick="resetGallery(&#39;gc-v15&#39;,&#39;video&#39;,15,&#39;video&#39;)">✕</button></div><div class="gallery-card video-card has-media" id="gc-v16"><video src="blob:null/5a629ed2-469e-46d6-942a-07ea80f96c97" controls="" loop=""></video><button class="card-remove" onclick="resetGallery(&#39;gc-v16&#39;,&#39;video&#39;,16,&#39;video&#39;)">✕</button></div><div class="gallery-card video-card has-media" id="gc-v17"><video src="blob:null/3a07d05d-9bd9-47c4-b2d5-bbb3bda986ee" controls="" loop=""></video><button class="card-remove" onclick="resetGallery(&#39;gc-v17&#39;,&#39;video&#39;,17,&#39;video&#39;)">✕</button></div></div>
+      </div>
+      <div class="carousel-controls">
+        <button class="car-arrow" id="video-prev" onclick="slideCarousel(&#39;video&#39;,-1)">←</button>
+        <div class="car-dots" id="video-dots"><button class="car-dot"></button><button class="car-dot"></button><button class="car-dot"></button><button class="car-dot active"></button><button class="car-dot"></button><button class="car-dot"></button><button class="car-dot"></button><button class="car-dot"></button><button class="car-dot"></button></div>
+        <span class="car-counter" id="video-counter">7 – 8 / 17</span>
+        <button class="car-arrow" id="video-next" onclick="slideCarousel(&#39;video&#39;,1)">→</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- MUSIC PLAYER -->
+<div class="music-player">
+  <audio id="audio" loop="" src="blob:null/fe61bbdd-efcf-4a81-9b38-c71c87b38dd7"></audio>
+  <div class="mp-disc" id="mp-disc">🎵</div>
+  <div class="mp-info">
+    <div class="mp-title" id="mp-title">WhatsApp Audio 2026-03-15 at 2.41.55 PM</div>
+    <div class="mp-sub">Birthday playlist 🎂</div>
+  </div>
+  <div class="mp-progress" id="mp-prog" onclick="seekAudio(event)">
+    <div class="mp-fill" id="mp-fill" style="width: 50.1131%;"></div>
+  </div>
+  <button class="mp-ctrl mp-secondary" onclick="restartAudio()">↺</button>
+  <button class="mp-ctrl mp-play" id="mp-playbtn" onclick="toggleAudio()">▶</button>
+  <input class="mp-vol" type="range" min="0" max="1" step="0.05" value="0.5" oninput="setVol(this.value)">
+  <button class="mp-upload-btn">
+    <input type="file" accept="audio/*" id="audio-file" onchange="loadAudio(this)">
+    <label for="audio-file" style="cursor:pointer;">🎵 Add Song</label>
+  </button>
+</div>
+
+<!-- LIGHTBOX -->
+<div class="lightbox" id="lightbox" onclick="closeLb()">
+  <div class="lb-inner" id="lb-inner" onclick="event.stopPropagation()">
+    <button class="lb-close" onclick="closeLb()">✕</button>
+    
+    
+    <div class="lb-counter">1 / 1</div>
+  <img src="blob:null/c8099d31-9348-4e7b-a06a-8e28924ed712"></div>
+</div>
+
+<footer>Made with 💖 by <strong>Shahdullah</strong> &nbsp;·&nbsp; For Nigha 🌍✨</footer>
+
+<script>
+// CONFETTI
+const ce = document.getElementById('confetti');
+const cols = ['#ff6b9d','#845ef7','#339af0','#ffd43b','#51cf66','#ff922b','#22d3ee'];
+for (let i = 0; i < 50; i++) {
+  const d = document.createElement('div');
+  d.className = 'cdot';
+  const s = Math.random()*10+4;
+  d.style.cssText = `width:${s}px;height:${s}px;left:${Math.random()*100}%;top:-20px;background:${cols[Math.floor(Math.random()*cols.length)]};opacity:${Math.random()*0.5+0.2};animation:cfall ${Math.random()*6+4}s ${Math.random()*8}s linear infinite;`;
+  ce.appendChild(d);
+}
+
+// SCROLL REVEAL
+const obs = new IntersectionObserver(entries => entries.forEach(e => { if(e.isIntersecting) e.target.classList.add('visible'); }), {threshold:0.1});
+document.querySelectorAll('.reveal').forEach(el => obs.observe(el));
+
+// BUILD CAROUSELS
+const photoState = { cur: 0, total: 21, visible: 3 };
+const videoState = { cur: 0, total: 17, visible: 2 };
+
+function buildGallery() {
+  const pt = document.getElementById('photos-track');
+  const vt = document.getElementById('videos-track');
+
+  for (let i=1;i<=21;i++) {
+    const d=document.createElement('div');
+    d.className='gallery-card photo-card'; d.id=`gc-p${i}`;
+    d.innerHTML=`<div class="gc-inner"><span class="gc-icon">🖼️</span><span class="gc-num">Photo ${i}</span><label class="gc-upload"><input type="file" accept="image/*" onchange="loadGallery('gc-p${i}',this,'image',${i},'photo')"> + Upload</label></div>`;
+    pt.appendChild(d);
+  }
+  for (let i=1;i<=17;i++) {
+    const d=document.createElement('div');
+    d.className='gallery-card video-card'; d.id=`gc-v${i}`;
+    d.innerHTML=`<div class="gc-inner"><span class="gc-icon">🎬</span><span class="gc-num">Video ${i}</span><label class="gc-upload"><input type="file" accept="video/*" onchange="loadGallery('gc-v${i}',this,'video',${i},'video')"> + Upload</label></div>`;
+    vt.appendChild(d);
+  }
+
+  buildDots('photo', 21, 3);
+  buildDots('video', 17, 2);
+  updateCarousel('photo');
+  updateCarousel('video');
+}
+buildGallery();
+
+function buildDots(type, total, visible) {
+  const pages = Math.ceil(total / visible);
+  const container = document.getElementById(`${type}-dots`);
+  container.innerHTML = '';
+  for (let i=0;i<pages;i++) {
+    const b=document.createElement('button');
+    b.className='car-dot'+(i===0?' active':'');
+    b.onclick=()=>{ const s=type==='photo'?photoState:videoState; s.cur=i*s.visible; updateCarousel(type); };
+    container.appendChild(b);
+  }
+}
+
+function slideCarousel(type, dir) {
+  const s = type==='photo' ? photoState : videoState;
+  s.cur = Math.max(0, Math.min(s.cur + dir, s.total - s.visible));
+  updateCarousel(type);
+}
+
+function updateCarousel(type) {
+  const s = type==='photo' ? photoState : videoState;
+  const track = document.getElementById(`${type}s-track`);
+  const cards = track.children;
+  if (!cards.length) return;
+
+  // responsive visible count
+  const w = window.innerWidth;
+  if (type==='photo') s.visible = w<=480 ? 1 : w<=768 ? 2 : 3;
+  else                s.visible = w<=768 ? 1 : 2;
+
+  s.cur = Math.min(s.cur, s.total - s.visible);
+
+  const cardW = cards[0].getBoundingClientRect().width || 200;
+  const gap = 16;
+  const offset = s.cur * (cardW + gap);
+  track.style.transform = `translateX(-${offset}px)`;
+
+  // counter
+  document.getElementById(`${type}-counter`).textContent = `${s.cur+1} – ${Math.min(s.cur+s.visible,s.total)} / ${s.total}`;
+
+  // arrows
+  document.getElementById(`${type}-prev`).disabled = s.cur <= 0;
+  document.getElementById(`${type}-next`).disabled = s.cur >= s.total - s.visible;
+
+  // dots
+  const dots = document.getElementById(`${type}-dots`).children;
+  const activePage = Math.floor(s.cur / s.visible);
+  Array.from(dots).forEach((d,i)=>d.classList.toggle('active',i===activePage));
+}
+
+window.addEventListener('resize', ()=>{ updateCarousel('photo'); updateCarousel('video'); });
+
+// GALLERY UPLOAD
+function loadGallery(slotId,input,type,num,carType) {
+  const file=input.files[0]; if(!file)return;
+  const url=URL.createObjectURL(file);
+  const slot=document.getElementById(slotId);
+  slot.classList.add('has-media');
+  if(type==='image'){slot.innerHTML=`<img src="${url}" onclick="openLb('image','${url}','${carType}',${num-1})"><button class="card-remove" onclick="resetGallery('${slotId}','${type}',${num},'${carType}')">✕</button>`;}
+  else{slot.innerHTML=`<video src="${url}" controls loop></video><button class="card-remove" onclick="resetGallery('${slotId}','${type}',${num},'${carType}')">✕</button>`;}
+}
+function resetGallery(slotId,type,num,carType) {
+  const slot=document.getElementById(slotId);
+  slot.classList.remove('has-media');
+  const icon=type==='image'?'🖼️':'🎬';
+  const label=type==='image'?'Photo':'Video';
+  const accept=type==='image'?'image/*':'video/*';
+  slot.innerHTML=`<div class="gc-inner"><span class="gc-icon">${icon}</span><span class="gc-num">${label} ${num}</span><label class="gc-upload"><input type="file" accept="${accept}" onchange="loadGallery('${slotId}',this,'${type}',${num},'${carType}')"> + Upload</label></div>`;
+}
+
+// PREVIEW
+function loadPreview(slotId,input,type,label) {
+  const file=input.files[0]; if(!file)return;
+  const url=URL.createObjectURL(file);
+  const slot=document.getElementById(slotId);
+  slot.classList.add('has-media');
+  slot.innerHTML=`<button class="card-remove" onclick="clearPreview('${slotId}','${type}','${label}')">✕</button>`;
+  if(type==='image'){const img=document.createElement('img');img.src=url;img.onclick=()=>openLb('image',url,'',0);slot.appendChild(img);}
+  else{const vid=document.createElement('video');vid.src=url;vid.controls=true;vid.loop=true;slot.appendChild(vid);}
+}
+function clearPreview(slotId,type,label) {
+  const slot=document.getElementById(slotId);
+  slot.classList.remove('has-media');
+  const icon=type==='image'?'🖼️':'🎬';
+  const accept=type==='image'?'image/*':'video/*';
+  slot.innerHTML=`<span class="uc-icon">${icon}</span><span class="uc-label">${label}</span><label class="uc-btn"><input type="file" accept="${accept}" onchange="loadPreview('${slotId}',this,'${type}','${label}')"> + Upload</label>`;
+}
+function revealGallery() {
+  const g=document.getElementById('full-gallery');
+  g.style.display='block';
+  const btn=document.getElementById('prank-btn');
+  btn.textContent='🎉 Happy Birthday Nigha!';
+  btn.style.background='linear-gradient(135deg,#51cf66,#339af0)';
+  btn.onclick=null; btn.style.cursor='default';
+  document.getElementById('prank-hint').textContent='( Gotcha! These are our memories 💛 )';
+  setTimeout(()=>g.scrollIntoView({behavior:'smooth',block:'start'}),100);
+}
+
+// LIGHTBOX with prev/next
+let lbSrcs = [];
+let lbIdx = 0;
+
+function openLb(type, src, carType, idx) {
+  // collect all uploaded media of same carType for navigation
+  if (carType === 'photo') {
+    lbSrcs = Array.from(document.querySelectorAll('#photos-track .gallery-card.has-media img')).map(el=>({type:'image',src:el.src}));
+    lbIdx = lbSrcs.findIndex(s=>s.src===src);
+    if(lbIdx<0){lbIdx=0;}
+  } else if (carType === 'video') {
+    lbSrcs = Array.from(document.querySelectorAll('#videos-track .gallery-card.has-media video')).map(el=>({type:'video',src:el.src}));
+    lbIdx = 0;
+  } else {
+    lbSrcs = [{type,src}]; lbIdx = 0;
+  }
+  renderLb();
+  document.getElementById('lightbox').classList.add('open');
+}
+
+function renderLb() {
+  const {type,src} = lbSrcs[lbIdx] || {type:'image',src:''};
+  const inner = document.getElementById('lb-inner');
+  inner.innerHTML = `
+    <button class="lb-close" onclick="closeLb()">✕</button>
+    ${lbSrcs.length>1?`<button class="lb-nav lb-nav-l" onclick="navLb(-1)">&#8592;</button>`:''}
+    ${lbSrcs.length>1?`<button class="lb-nav lb-nav-r" onclick="navLb(1)">&#8594;</button>`:''}
+    <div class="lb-counter">${lbIdx+1} / ${lbSrcs.length}</div>
+  `;
+  const el = type==='image' ? document.createElement('img') : document.createElement('video');
+  el.src = src;
+  if (type==='video') { el.controls=true; el.autoplay=true; }
+  inner.appendChild(el);
+}
+
+function navLb(dir) {
+  lbIdx = (lbIdx + dir + lbSrcs.length) % lbSrcs.length;
+  renderLb();
+}
+function closeLb() { document.getElementById('lightbox').classList.remove('open'); }
+document.addEventListener('keydown',e=>{
+  if(e.key==='Escape') closeLb();
+  if(e.key==='ArrowRight' && lbSrcs.length>1) navLb(1);
+  if(e.key==='ArrowLeft'  && lbSrcs.length>1) navLb(-1);
+});
+
+// MUSIC
+const audio=document.getElementById('audio');
+const disc=document.getElementById('mp-disc');
+let playing=false;
+function loadAudio(input) {
+  const file=input.files[0]; if(!file)return;
+  audio.src=URL.createObjectURL(file);
+  audio.volume=0.5; audio.play();
+  playing=true; disc.classList.add('playing');
+  document.getElementById('mp-playbtn').textContent='⏸';
+  document.getElementById('mp-title').textContent=file.name.replace(/\.[^.]+$/,'');
+}
+function toggleAudio() {
+  if(!audio.src)return;
+  if(playing){audio.pause();disc.classList.remove('playing');document.getElementById('mp-playbtn').textContent='▶';}
+  else{audio.play();disc.classList.add('playing');document.getElementById('mp-playbtn').textContent='⏸';}
+  playing=!playing;
+}
+function restartAudio() {
+  if(!audio.src)return;
+  audio.currentTime=0;audio.play();
+  playing=true;disc.classList.add('playing');
+  document.getElementById('mp-playbtn').textContent='⏸';
+}
+function setVol(v){audio.volume=v;}
+function seekAudio(e){
+  if(!audio.duration)return;
+  const r=e.currentTarget.getBoundingClientRect();
+  audio.currentTime=((e.clientX-r.left)/r.width)*audio.duration;
+}
+audio.addEventListener('timeupdate',()=>{
+  if(!audio.duration)return;
+  document.getElementById('mp-fill').style.width=(audio.currentTime/audio.duration*100)+'%';
+});
+</script>
+
+
+</body></html>
